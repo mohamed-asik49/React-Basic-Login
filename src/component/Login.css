@@ -1,0 +1,96 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;   
+  min-height: 100vh;
+  background: url("../assets/anime-waterfall-scene.jpg")
+    no-repeat center center/cover; /* Anime bg (replace with your image) */
+  padding: 20px;
+}
+
+.login-form {
+  backdrop-filter: blur(12px);       /* Glass blur effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  background: rgba(255, 255, 255, 0.15); /* Transparent white overlay */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+  width: 380px;
+  max-width: 100%;
+  color: white; /* text color on glass */
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e0e0e0;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.form-group input::placeholder {
+  color: #ddd;
+}
+
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: rgba(79, 70, 229, 0.9);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: rgba(67, 56, 202, 0.95);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .login-form {
+    width: 85%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    width: 95%;
+    padding: 20px;
+  }
+}
